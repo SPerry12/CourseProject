@@ -1,0 +1,34 @@
+﻿body
+{
+    background-color: goldenrod;
+}
+
+.container {
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 6px;
+}
+
+.piccolumn {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.piccolumn img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
