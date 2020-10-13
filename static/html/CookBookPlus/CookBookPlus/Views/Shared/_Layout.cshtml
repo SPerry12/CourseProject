@@ -1,0 +1,119 @@
+﻿!DOCTYPE html>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/site.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<html lang="en">
+
+<head>
+    <title>Cook Book Plus</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+            <div class="logo">
+                <a class="navbar-brand" asp-action="Index">CookBookPlus</a>
+            </div>
+
+            <ul class="navbar-nav mr-4">
+                <li class="nav-item">
+                    <a class="nav-link" asp-action="RecipePage">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-action="Profile">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-action="Contact">Contact</a> 
+                </li>
+            </ul>
+
+
+
+            <div class="myModal">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <a href="" class="btn btn-primary" data-toggle="modal" data-target="#signupPage">Sign up<i class="fas fa-sign-in-alt ml-3"></i></a>
+                    </div>
+
+                    <div class="text-center">
+                        <a href="" class="btn btn-primary" data-toggle="modal" data-target="#signinPage">Sign in<i class="fas fa-sign-in-alt ml-3"></i></a>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="signupPage">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header text-center">
+                                <h4 class="modal-title text-center w-100 font-weight-bold">Sign Up</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-lable="close">&times;</button>
+                            </div>
+                            <div class="modal-body mx-3">
+                                <div class="md-form mb-5">
+                                    <i class="fas fa-user prefix grey-text"></i>
+                                    <input type="text" class="form-control validate" />
+                                    <label data-error="wrong" data-success="right">Your Name</label>
+                                </div>
+
+                                <div class="md-form mb-5">
+                                    <i class="fas fa-envelope prefix grey-text"></i>
+                                    <input type="email" class="form-control validate" />
+                                    <label data-error="wrong" data-success="right">Your Email</label>
+                                </div>
+
+                                <div class="md-form mb-5">
+                                    <i class="fas fa-lock prefix grey-text"></i>
+                                    <input type="password" class="form-control validate" />
+                                    <label data-error="wrong" data-success="right">Your Password</label>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer d-flex justify-content-center">
+                                <button class="btn btn-primary">Sign up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="signinPage">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-header text-center">
+                                <h3 class="modal-title w-100 dark-grey-text font-weight-bold">Sign In</h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-lable="close">&times;</button>
+                            </div>
+
+                            <div class="modal-body mx-4">
+                                <div class="md-form">
+                                    <input type="email" class="form-control validate" />
+                                    <label data-error="wrong" data-success="right">Your Email</label>
+                                </div>
+
+                                <div class="md-form">
+                                    <input type="email" class="form-control validate" />
+                                    <label data-error="wrong" data-success="right">Your Password</label>
+                                    <p class="font-small blue-text d-flex justify-content-center">Forgot<a href="#" class="blue-text ml-1">Password?</a></p>
+                                </div>
+
+                                <div class="text-center mb-3">
+                                    <button type="button" class="btn btn-primary btn-block z-depth-la">Sign in</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    @RenderBody()
+</body>
+</html>
