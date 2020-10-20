@@ -8,10 +8,10 @@
     margin-top: 1em;
 }
 
-    .carousel-item img {
-        height: 700px;
-        width: 1200px;
-    }
+.carousel-item img {
+    height: 700px;
+    width: 1200px;
+}
 
 .column {
     float: left;
