@@ -1,26 +1,5 @@
-# Headline 1
-## Headline 2
-### Headline 3
-Paragraph 1 of text.
+# CookBookPlus
 
-Next paragraph.
+CookBookPlus was my first ever web application built in ASP.NET Core. In a sense this application is a digital cookbook that allows a user to create and save recipes to their profile.
 
-## Headline lower down
-Empasis *is* **fun**. ~strike through~, _underline_, code view: `Console.WriteLine("Test";`
-
-[A link to google](http://google.com)
-
-ordered list
-1. This is first
-2. This is second
-3. This is third
-
-unordered list
-- an item
-- another item
-- a third item
-
-| Header | Second Header |
-|-|-|
-|tag | Data|
-|tag2 | data2 |
+The original plan for this project was to implement a system where users could rate and comment on recipes and chefs in addition to the ability to create/save recipes.
