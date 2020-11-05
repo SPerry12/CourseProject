@@ -2,11 +2,11 @@ Minimum-viable product (MVP)
 
 - User accounts
 - Database to store recipies 
-- A GUI that at minimum can display recipe data in a readable way.
+- A site that at minimum can display recipe data in a readable way.
 - Ability to search other user recipies
 
 Full
-- An appealing and user friendly GUI
+- An appealing and user friendly site
 - The ability to search other user recipies by premade tags
 - Rating system for chefs and recipies
 - The ability for users to comment on recipies
